@@ -97,3 +97,25 @@ for char in input {
 
 print(output)
 */
+
+// Fourth:
+
+var input = "turpentine and turtles"
+var output = ""
+
+for char in input {
+  let upperChar = char.uppercased()
+
+  switch  upperChar {
+    case  "A", "I", "O":
+      output = output + upperChar
+    case "E":
+      output += "EE"
+    case "U":
+      output += "UU"
+    default:
+      continue
+  }
+}
+
+print(output)
